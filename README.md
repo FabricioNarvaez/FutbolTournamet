@@ -25,3 +25,10 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## Futbol tournament web
+In this project, I am going to create a web page in Angular about futbol tournament with personalized team pages, leaderboards, upcoming matches and other features.
+
+For this, I will use HTML, CSS, JavaScript, Bootstrap, AngularJS framework, and non-relational database MongoDB.
+
+The purpose of this project is to use new tools and functionalities of Angular that I did not know. In this way, I intend to increase my skills with the framework.
