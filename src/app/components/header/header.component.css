@@ -25,6 +25,10 @@
 }
 
 /* Header nav */
+.headerNav ul{
+    padding: 0;
+    margin: 0;
+}
 .headerNav ul li{
     display: inline-block;
     line-height: 70px;
@@ -33,6 +37,7 @@
 }
 
 .headerNav ul li button{
+    font-size: 18px;
     height: 30px;
     color: var(--greenWeb);
     background-color: transparent;
@@ -44,4 +49,22 @@
 .headerNav ul li button:hover{
     color: var(--white);
     background-color: var(--greenWeb);
+}
+
+/* Media queries */
+@media (max-width: 1130px) {
+    .headerContainer{
+        width: 100%;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 460px) {
+    .logoHeader{
+        flex-direction: column;
+    }
+    .headerNav ul li button{
+        font-size: 15px;
+    }
+    /* TODO: Collapse nav */
 }
