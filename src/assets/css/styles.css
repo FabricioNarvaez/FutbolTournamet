@@ -1,0 +1,13 @@
+:root{
+    --headerFont: 'Raleway', sans-serif;
+    --bodyFont: 'Barlow Semi Condensed', sans-serif;
+    --greenWeb: #84d12d;
+    --greyWeb: #CCC;
+    --white: #FFF;
+    --black: #000;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
