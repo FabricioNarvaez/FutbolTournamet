@@ -1,24 +1,31 @@
 <header id="header">
     <div class="headerContainer">
         <div class="logoHeader">
-            <img src="../../../assets/images/football-logo.png" alt="tournamentLogo"/>
+            <img src="assets/images/football-logo.png" alt="tournamentLogo"/>
             <span><strong>Soccer</strong>Tournament</span>
         </div>
         <nav class="headerNav">
-            <ul>
-                <li>
-                    <button class="navButton">home</button>
-                </li>
-                <li>
-                    <button class="navButton">stats center</button>
-                </li>
-                <li>
-                    <button class="navButton">table</button>
-                </li>
-                <li>
-                    <button class="navButton">results</button>
-                </li>
-            </ul>
+            <div class="menuIcon" [class.menuIconClass]="menuIconVariable" (click)="openMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu" [class.menuClass]="menuVariable">
+                <ul>
+                    <li>
+                        <button class="navButton">home</button>
+                    </li>
+                    <li>
+                        <button class="navButton">stats center</button>
+                    </li>
+                    <li>
+                        <button class="navButton">table</button>
+                    </li>
+                    <li>
+                        <button class="navButton">results</button>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </div>
 </header>

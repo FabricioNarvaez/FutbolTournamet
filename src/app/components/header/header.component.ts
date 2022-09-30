@@ -1,15 +1,22 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-header',
-  templateUrl: './header.component.html',
-  styleUrls: ['./header.component.css']
+	selector: 'app-header',
+	templateUrl: './header.component.html',
+	styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+	constructor() { }
 
-  ngOnInit(): void {
-  }
+	menuVariable:boolean = false;
+	menuIconVariable:boolean = false;
 
+	ngOnInit(): void {
+	}
+
+	openMenu(){
+		this.menuVariable =! this.menuVariable;
+		this.menuIconVariable =! this.menuIconVariable;
+	}
 }
