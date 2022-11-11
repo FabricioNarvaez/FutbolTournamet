@@ -7,7 +7,32 @@
     --black: #000;
 }
 
-body{
+*{
     margin: 0;
     padding: 0;
+}
+
+body{
+    height: 100vh;
+    text-align: center;
+    font-family: var(--bodyFont);
+    display: flex;
+    flex-flow: column;
+}
+
+/* TODO: router-outlet instead of app-header  */
+app-header{
+    display: flex;
+    flex-flow: column;
+    height: calc( 100vh - 80px);
+}
+
+app-footer{
+    margin-top: auto;
+}
+
+@media (max-width: 670px){
+    app-header{
+        height: calc( 100vh - 127px);
+    }
 }
