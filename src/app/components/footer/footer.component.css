@@ -2,7 +2,7 @@
     margin-top: auto;
     padding: 0 140px;
     height: 80px;
-    background-color: var(--greenWeb);
+    background-color: var(--blueWeb);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -14,11 +14,12 @@
 }
 
 .footer-text a{
-    color: var(--black);
     text-decoration: none;
 }
+
 .footer-text a:hover{
-    color: var(--white);
+    color: var(--green);
+    text-decoration: underline;
 }
 
 @media (max-width: 950px) {

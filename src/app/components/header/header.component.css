@@ -2,8 +2,8 @@
     width: 100%;
     height: auto;
     font-family: var(--headerFont);
-    background-color: var(--greenWeb);
-    /* border-bottom: 5px solid var(--greenWeb); */
+    background-color: var(--blueWeb);
+    /* border-bottom: 5px solid var(--blueWeb); */
 }
 
 .headerContainer{
@@ -34,7 +34,6 @@
 .navButton{
     font-size: 18px;
     height: 35px;
-    color: var(--white);
     background-color: transparent;
     border-radius: 5px;
     border: none;
@@ -43,8 +42,8 @@
 }
 
 .navButton:hover{
-    color: var(--greenWeb);
-    background-color: var(--white);
+    color: var(--blueWeb);
+    background-color: var(--green);
 }
 
 .menu ul li{
