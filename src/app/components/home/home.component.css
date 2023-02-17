@@ -1,0 +1,26 @@
+swiper img{
+    height: 100px;
+}
+
+.swiper-button-prev,
+.swiper-button-next{
+    color: white;
+    background: var(--blueWeb);
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+}
+
+.swiper-button-next::after{
+    margin-left: 5px;
+    font-size: 24px;
+}
+
+.swiper-button-prev::after{
+    margin-right: 5px;
+    font-size: 24px;
+}
+
+.swiper-pagination-bullets{
+    display: none;
+}
