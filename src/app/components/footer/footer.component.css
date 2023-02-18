@@ -13,10 +13,6 @@
     width: 70px;
 }
 
-.footer-text a{
-    text-decoration: none;
-}
-
 .footer-text a:hover{
     color: var(--green);
     text-decoration: underline;

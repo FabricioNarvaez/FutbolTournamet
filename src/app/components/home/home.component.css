@@ -1,4 +1,35 @@
-swiper img{
+.homePage{
+    width: 75%;
+    margin: 0 auto;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 2fr 1fr;
+}
+
+.homeBody{
+    margin-top: 20px;
+    width: 100%;
+}
+
+h2.section{
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+}
+.swiper-slide { width: 50% }
+.linkAllClubs{
+    color: var(--black);
+    text-decoration: underline;
+    font-size: 13px;
+}
+
+.swiper{
+    text-align: center;
+    width: 820px;
+    margin: 20px;
+}
+
+.swiper img{
     height: 100px;
 }
 

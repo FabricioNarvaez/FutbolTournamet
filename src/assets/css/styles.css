@@ -4,6 +4,7 @@
     --blueWeb: #111F98;
     --green: #cdfb0a;
     --lightGrey: #CCC;
+    --grey: #efefef;
     --darkGrey: #808080;
     --white: #FFF;
     --black: #000;
@@ -16,10 +17,13 @@
 
 body{
     height: 100vh;
-    text-align: center;
     font-family: var(--bodyFont);
     display: flex;
     flex-flow: column;
+}
+
+a{
+    text-decoration: none;
 }
 
 /* TODO: router-outlet instead of app-header  */
