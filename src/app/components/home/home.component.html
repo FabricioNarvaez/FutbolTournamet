@@ -6,8 +6,12 @@
     </h2>
     <swiper [config]="swiperConfig">
       <ng-template swiperSlide *ngFor="let img of imgCollection">
-        <img src="{{img.src}}" />
-        <h3>{{img.club}}</h3>
+        <div class="swiper-item">
+          <a href="#">
+            <img src="{{ img.src }}" />
+            <h3>{{ img.club }}</h3>
+          </a>
+        </div>
       </ng-template>
     </swiper>
   </div>

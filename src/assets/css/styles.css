@@ -24,6 +24,7 @@ body{
 
 a{
     text-decoration: none;
+    color: var(--black);
 }
 
 /* TODO: router-outlet instead of app-header  */
@@ -46,6 +47,6 @@ app-footer{
 
 @media (max-width: 670px){
     app-header{
-        height: calc( 100vh - 127px);
+        /* height: calc( 100vh - 127px); */
     }
 }
