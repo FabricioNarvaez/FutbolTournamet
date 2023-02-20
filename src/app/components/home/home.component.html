@@ -1,6 +1,6 @@
 <div class="homePage">
   <div class="swiperContainer">
-    <h2 class="section">
+    <h2 class="allTeamsTitle">
       EQUIPOS
       <a class="linkAllClubs" href="#">TODOS LOS EQUIPOS</a>
     </h2>
@@ -15,23 +15,28 @@
       </ng-template>
     </swiper>
   </div>
-  <div class="tableContainer">
-    <h3>Table</h3>
-    <table>
-      <thead>
-        <th>Pos</th>
-        <th>Club</th>
-        <th>GD</th>
-        <th>Pts</th>
-      </thead>
-      <tbody>
-        <tr>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-      </tbody>
-    </table>
+  <div class="homePageGrid">
+    <div class="section"></div>
+    <div class="tableContainer">
+      <div class="tableTitle">
+        <h3>CLASIFICACIÓN</h3>
+      </div>
+      <table class="tableContent">
+        <thead class="tableHeader">
+          <th>Pos</th>
+          <th>Club</th>
+          <th>GD</th>
+          <th>Pts</th>
+        </thead>
+        <tbody class="tableBody">
+          <tr *ngFor="let club of tableItems; let i = index">
+            <td>{{ i + 1 }}</td>
+            <td>{{ club.team }}</td>
+            <td>{{ club.GD }}</td>
+            <td>{{ club.pts }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </div>
 </div>
