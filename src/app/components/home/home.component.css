@@ -1,9 +1,6 @@
 .homePage{
     width: 75%;
     margin: 0 auto;
-    display: grid;
-    justify-items: center;
-    grid-template-columns: 2fr 1fr;
 }
 
 .homeBody{
@@ -25,9 +22,13 @@ h2.section{
 
 .swiper{
     text-align: center;
-    width: 820px;
-    margin: 20px;
+    margin: 20px auto;
 }
+
+.swiper-slide {
+    width: 100%;
+    height: 100%;
+  }
 
 .swiper img{
     height: 100px;
