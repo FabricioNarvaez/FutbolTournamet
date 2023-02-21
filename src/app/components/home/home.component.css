@@ -28,13 +28,21 @@
   padding: 10px;
 }
 
+.swiper-item:hover{
+  background-color: var(--blueWeb);
+}
+
+.swiper-item:hover h3{
+  color: var(--white);
+}
+
 .swiper img {
   height: 100px;
 }
 
 .swiper-button-prev,
 .swiper-button-next {
-  color: white;
+  color: var(--white);;
   background: var(--blueWeb);
   width: 40px;
   height: 40px;
