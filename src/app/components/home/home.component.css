@@ -7,12 +7,11 @@
 .allTeamsTitle {
   display: flex;
   justify-content: space-between;
-  font-size: 18px;
+  align-items: flex-end;
 }
 
 .linkAllClubs {
   color: var(--black);
-  text-decoration: underline;
   font-size: 13px;
 }
 

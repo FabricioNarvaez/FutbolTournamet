@@ -1,5 +1,6 @@
 :root {
   --headerFont: "Raleway", sans-serif;
+  --subtitleFont: 'Nunito Sans', sans-serif;
   --bodyFont: "Barlow Semi Condensed", sans-serif;
   --blueWeb: #111f98;
   --green: #cdfb0a;
@@ -8,6 +9,11 @@
   --darkGrey: #808080;
   --white: #fff;
   --black: #000;
+}
+
+.subTitle{
+  font-size: 20px;
+  font-family: var(--subtitleFont);
 }
 
 * {
