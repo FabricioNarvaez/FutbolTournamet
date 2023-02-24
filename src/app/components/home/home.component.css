@@ -29,11 +29,11 @@
   padding: 10px;
 }
 
-.swiper-item:hover{
+.swiper-item:hover {
   background-color: var(--blueWeb);
 }
 
-.swiper-item:hover h3{
+.swiper-item:hover h3 {
   color: var(--white);
 }
 
@@ -43,7 +43,7 @@
 
 .swiper-button-prev,
 .swiper-button-next {
-  color: var(--white);;
+  color: var(--white);
   background: var(--blueWeb);
   width: 40px;
   height: 40px;
@@ -62,6 +62,46 @@
 
 .swiper-pagination-bullets {
   display: none;
+}
+
+/* Section próximos partidos*/
+
+.section {
+  padding-top: 20px;
+}
+
+.matchesContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  padding: 20px 0px;
+}
+
+.matchCard {
+  border: 1.5px solid var(--lightGrey);
+  display: grid;
+  align-content: space-between;
+}
+
+.infoTeams {
+  margin: 10px 5px 4px 5px;
+  display: grid;
+  gap: 5px;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center;
+}
+
+.infoMatch{
+  text-align: center;
+  font-weight: bold;
+  padding: 10px 0px;
+  background-color: var(--blueWeb);
+  color: var(--white);
+}
+
+.matchCard img {
+  height: 50px;
 }
 
 /* Table */

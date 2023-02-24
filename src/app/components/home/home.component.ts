@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
-import SwiperCore, { Navigation, Pagination, SwiperOptions } from 'swiper';
+import SwiperCore, { Navigation, Pagination } from 'swiper';
 
 SwiperCore.use([Navigation, Pagination]);
 
@@ -10,6 +10,59 @@ SwiperCore.use([Navigation, Pagination]);
   encapsulation: ViewEncapsulation.None,
 })
 export class HomeComponent implements OnInit {
+  matches: Array<any> = [
+    {
+      teamHome: 'Arsenal',
+      teamHomeImg: '../../../assets/images/teams/Arsenal.png',
+      teamAway: 'Barcelona',
+      teamAwayImg: '../../../assets/images/teams/Barcelona.png',
+      matchDate: {
+        date: '8/12/2023',
+        hour: '17:45',
+      },
+    },
+    {
+      teamHome: 'Bayern',
+      teamHomeImg: '../../../assets/images/teams/Bayern.png',
+      teamAway: 'Besiktas',
+      teamAwayImg: '../../../assets/images/teams/Besiktas.png',
+      matchDate: {
+        date: '9/12/2023',
+        hour: '17:45',
+      },
+    },
+    {
+      teamHome: 'Borussia',
+      teamHomeImg: '../../../assets/images/teams/Borussia.png',
+      teamAway: 'Diogo',
+      teamAwayImg: '../../../assets/images/teams/Diogo.png',
+      matchDate: {
+        date: '7/6/2023',
+        hour: '17:45',
+      },
+    },
+    {
+      teamHome: 'Manchester City',
+      teamHomeImg: '../../../assets/images/teams/Manchester City.png',
+      teamAway: 'Manchester United',
+      teamAwayImg: '../../../assets/images/teams/Manchester United.png',
+      matchDate: {
+        date: '9/2/2023',
+        hour: '17:45',
+      },
+    },
+    {
+      teamHome: 'Neira',
+      teamHomeImg: '../../../assets/images/teams/Neira.png',
+      teamAway: 'PSG',
+      teamAwayImg: '../../../assets/images/teams/PSG.png',
+      matchDate: {
+        date: '3/3/2023',
+        hour: '17:45',
+      },
+    },
+  ];
+
   imgCollection: Array<any> = [
     {
       src: '../../../assets/images/teams/Arsenal.png',
@@ -32,12 +85,16 @@ export class HomeComponent implements OnInit {
       club: 'Borussia',
     },
     {
-      src: '../../../assets/images/teams/Club Nacional.png',
-      club: 'Club Nacional',
-    },
-    {
       src: '../../../assets/images/teams/Diogo.png',
       club: 'Diogo',
+    },
+    {
+      src: '../../../assets/images/teams/Manchester City.png',
+      club: 'Manchester City',
+    },
+    {
+      src: '../../../assets/images/teams/Manchester United.png',
+      club: 'Manchester Utd',
     },
     {
       src: '../../../assets/images/teams/Neira.png',
@@ -76,9 +133,14 @@ export class HomeComponent implements OnInit {
       pts: 60,
     },
     {
-      team: 'Club Nacional',
+      team: 'Manchester Utd',
       GD: 5,
       pts: 10,
+    },
+    {
+      team: 'Manchester City',
+      GD: 8,
+      pts: 13,
     },
     {
       team: 'Diogo',
@@ -117,10 +179,11 @@ export class HomeComponent implements OnInit {
         slidesPerView: 5,
         spaceBetween: 50,
       },
-    }
+    },
   };
 
-  constructor() {}
+  constructor() {
+  }
 
   ngOnInit(): void {}
 }

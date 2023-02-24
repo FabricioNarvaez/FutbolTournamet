@@ -4,12 +4,12 @@
       EQUIPOS
       <a class="linkAllClubs" href="#">TODOS LOS EQUIPOS</a>
     </h2>
-    <hr>
+    <hr />
     <swiper [config]="swiperConfig">
       <ng-template swiperSlide *ngFor="let img of imgCollection">
         <div class="swiper-item">
           <a href="#">
-            <img src="{{ img.src }}" alt="{{ img.club }}"/>
+            <img src="{{ img.src }}" alt="{{ img.club }}" />
             <h3>{{ img.club }}</h3>
           </a>
         </div>
@@ -17,7 +17,25 @@
     </swiper>
   </div>
   <div class="homePageGrid">
-    <div class="section"></div>
+    <div class="section">
+      <h2 class="subTitle">Próximos Partidos</h2>
+      <hr />
+      <div class="matchesContainer">
+        <div class="matchCard" *ngFor="let match of matches">
+          <div class="infoTeams">
+            <img src="{{ match.teamHomeImg }}" alt="{{ match.teamHome }}" />
+            <h3>VS</h3>
+            <img src="{{ match.teamAwayImg }}" alt="{{ match.teamAwayImg }}" />
+            <p>{{ match.teamHome }}</p>
+            <div></div>
+            <p>{{ match.teamAway }}</p>
+          </div>
+          <div class="infoMatch">
+            <p><span>{{match.matchDate.date | date:"dd MMMM yyyy" : 'es' | titlecase }}</span> | {{match.matchDate.hour}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="tableContainer">
       <div class="tableTitle">
         <h3>CLASIFICACIÓN</h3>
