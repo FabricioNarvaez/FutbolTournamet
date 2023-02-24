@@ -1,1 +1,43 @@
-<p>home works!</p>
+<div class="homePage">
+  <div class="swiperContainer">
+    <h2 class="allTeamsTitle subTitle">
+      EQUIPOS
+      <a class="linkAllClubs" href="#">TODOS LOS EQUIPOS</a>
+    </h2>
+    <hr>
+    <swiper [config]="swiperConfig">
+      <ng-template swiperSlide *ngFor="let img of imgCollection">
+        <div class="swiper-item">
+          <a href="#">
+            <img src="{{ img.src }}" alt="{{ img.club }}"/>
+            <h3>{{ img.club }}</h3>
+          </a>
+        </div>
+      </ng-template>
+    </swiper>
+  </div>
+  <div class="homePageGrid">
+    <div class="section"></div>
+    <div class="tableContainer">
+      <div class="tableTitle">
+        <h3>CLASIFICACIÓN</h3>
+      </div>
+      <table class="tableContent">
+        <thead class="tableHeader">
+          <th>Pos</th>
+          <th>Club</th>
+          <th>GD</th>
+          <th>Pts</th>
+        </thead>
+        <tbody class="tableBody">
+          <tr *ngFor="let club of tableItems; let i = index">
+            <td>{{ i + 1 }}</td>
+            <td>{{ club.team }}</td>
+            <td>{{ club.GD }}</td>
+            <td>{{ club.pts }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

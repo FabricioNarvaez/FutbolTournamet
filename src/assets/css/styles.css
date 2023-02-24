@@ -1,38 +1,58 @@
-:root{
-    --headerFont: 'Raleway', sans-serif;
-    --bodyFont: 'Barlow Semi Condensed', sans-serif;
-    --greenWeb: #84d12d;
-    --lightGrey: #CCC;
-    --white: #FFF;
-    --black: #000;
+:root {
+  --headerFont: "Raleway", sans-serif;
+  --subtitleFont: 'Nunito Sans', sans-serif;
+  --bodyFont: "Barlow Semi Condensed", sans-serif;
+  --blueWeb: #111f98;
+  --green: #cdfb0a;
+  --grey: #ccc;
+  --lightGrey: #efefef;
+  --darkGrey: #808080;
+  --white: #fff;
+  --black: #000;
 }
 
-*{
-    margin: 0;
-    padding: 0;
+.subTitle{
+  font-size: 20px;
+  font-family: var(--subtitleFont);
 }
 
-body{
-    height: 100vh;
-    text-align: center;
-    font-family: var(--bodyFont);
-    display: flex;
-    flex-flow: column;
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  font-family: var(--bodyFont);
+  display: flex;
+  flex-flow: column;
+}
+
+a {
+  text-decoration: none;
+  color: var(--black);
 }
 
 /* TODO: router-outlet instead of app-header  */
-app-header{
-    display: flex;
-    flex-flow: column;
-    height: calc( 100vh - 80px);
+app-header {
+  display: flex;
+  flex-flow: column;
+  /* height: calc( 100vh - 80px); */
 }
 
-app-footer{
-    margin-top: auto;
+app-footer {
+  margin-top: auto;
 }
 
-@media (max-width: 670px){
-    app-header{
-        height: calc( 100vh - 127px);
-    }
+#header,
+.navButton,
+.footer-container,
+.footer-text a {
+  color: var(--white);
+}
+
+@media (max-width: 670px) {
+  app-header {
+    /* height: calc( 100vh - 127px); */
+  }
 }

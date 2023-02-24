@@ -1,0 +1,134 @@
+/* Swiper */
+.swiperContainer {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.allTeamsTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.linkAllClubs {
+  color: var(--black);
+  font-size: 13px;
+}
+
+.swiper {
+  text-align: center;
+  margin: 20px auto;
+}
+
+.swiper-item {
+  width: fit-content;
+  background-color: var(--lightGrey);
+  border-radius: 5px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.swiper-item:hover{
+  background-color: var(--blueWeb);
+}
+
+.swiper-item:hover h3{
+  color: var(--white);
+}
+
+.swiper img {
+  height: 100px;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: var(--white);;
+  background: var(--blueWeb);
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+}
+
+.swiper-button-next::after {
+  margin-left: 5px;
+  font-size: 24px;
+}
+
+.swiper-button-prev::after {
+  margin-right: 5px;
+  font-size: 24px;
+}
+
+.swiper-pagination-bullets {
+  display: none;
+}
+
+/* Table */
+
+.homePageGrid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.tableContainer {
+  padding: 20px 40px;
+}
+
+td,
+th {
+  padding: 5px;
+}
+
+tr,
+thead {
+  border: 1.5px solid var(--lightGrey);
+}
+
+table {
+  border-collapse: collapse;
+  box-shadow: 0px 0px 5px 0px var(--grey);
+}
+
+.tableTitle {
+  background-color: var(--blueWeb);
+  color: var(--white);
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tableContent {
+  width: 100%;
+  text-align: left;
+}
+
+.tableHeader {
+  color: var(--darkGrey);
+}
+
+/* section */
+
+/* Media queries */
+
+@media (max-width: 1530px) {
+  .tableContainer {
+    padding: 20px 0px 20px 20px;
+  }
+}
+
+@media (max-width: 1150px) {
+  .homePageGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .tableContainer {
+    padding: 20px 100px;
+  }
+}
+
+@media (max-width: 740px) {
+  .tableContainer {
+    padding: 20px 0px;
+  }
+}

@@ -1,145 +1,145 @@
-#header{
-    width: 100%;
-    height: auto;
-    font-family: var(--headerFont);
-    background-color: var(--greenWeb);
-    /* border-bottom: 5px solid var(--greenWeb); */
+#header {
+  width: 100%;
+  height: auto;
+  font-family: var(--headerFont);
+  background-color: var(--blueWeb);
+  /* border-bottom: 5px solid var(--blueWeb); */
 }
 
-.headerContainer{
-    width: 75%;
-    margin: 0px auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.headerContainer {
+  width: 75%;
+  margin: 0px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 /* Logo header */
-.logoHeader{
-    font-size: 30px;
-    display: flex;
-    align-items: center;
+.logoHeader {
+  font-size: 30px;
+  display: flex;
+  align-items: center;
 }
 
-.logoHeader img{
-    height: 150px;
+.logoHeader img {
+  height: 150px;
 }
 
 /* Header nav */
-.headerNav ul{
-    padding: 0;
-    margin: 0;
+.headerNav ul {
+  padding: 0;
+  margin: 0;
 }
 
-.navButton{
-    font-size: 18px;
-    height: 35px;
-    color: var(--white);
-    background-color: transparent;
-    border-radius: 5px;
-    border: none;
-    text-transform: uppercase;
-    transition: all 0.5s;
+.navButton {
+  font-size: 18px;
+  height: 35px;
+  background-color: transparent;
+  border-radius: 5px;
+  border: none;
+  text-transform: uppercase;
+  transition: all 0.5s;
 }
 
-.navButton:hover{
-    color: var(--greenWeb);
-    background-color: var(--white);
+.navButton:hover {
+  color: var(--blueWeb);
+  background-color: var(--green);
 }
 
-.menu ul li{
-    display: inline;
-    list-style-type: none;
-    margin: 20px;
-    cursor: pointer;
+.menu ul li {
+  display: inline;
+  list-style-type: none;
+  margin: 20px;
+  cursor: pointer;
 }
 
-.menuClass{
-    right: 0 !important;
-    transition: 0.4s ease-in-out;
+.menuClass {
+  right: 0 !important;
+  transition: 0.4s ease-in-out;
+  z-index: 10;
 }
 
 /* Media queries */
 
 @media (max-width: 1260px) {
-    .headerContainer{
-        width: 100%;
-    }
+  .headerContainer {
+    width: 100%;
+  }
 
-    .logoHeader{
-        margin-left: 40px;
-    }
+  .logoHeader {
+    margin-left: 40px;
+  }
 
-    .menu{
-        width: 280px;
-        height: 100%;
-        position: fixed;
-        right: -280px;
-        top:150px;
-        background-color: var(--lightGrey);
-        transition: 0.4s ease-in-out;
-    }
+  .menu {
+    width: 280px;
+    height: 100%;
+    position: fixed;
+    right: -280px;
+    top: 150px;
+    background-color: var(--grey);
+    transition: 0.4s ease-in-out;
+  }
 
-    .menu ul li{
-        display: block;
-    }
+  .menu ul li {
+    display: block;
+  }
 
-    .menuIcon{
-        display: inline-block;
-        position: relative;
-        right: 40px;
-    }
-    
-    .menuIcon span{
-        width: 32px;
-        height: 4px;
-        background: var(--white);
-        display: block;
-        transition: 0.2s all;
-    }
+  .menuIcon {
+    display: inline-block;
+    position: relative;
+    right: 40px;
+  }
 
-    .menuIconClass span:nth-child(1){
-        transform: rotate(45deg) ;
-    }
-    .menuIconClass span:nth-child(3){
-        transform: rotate(-45deg) ;
-        margin-top: -4px;
-    }
+  .menuIcon span {
+    width: 32px;
+    height: 4px;
+    background: var(--white);
+    display: block;
+    transition: 0.2s all;
+  }
 
-    .menuIconClass span:nth-child(2){
-        display: none;
-    }
+  .menuIconClass span:nth-child(1) {
+    transform: rotate(45deg);
+  }
+  .menuIconClass span:nth-child(3) {
+    transform: rotate(-45deg);
+    margin-top: -4px;
+  }
 
-    .menuIcon span:nth-child(2){
-        margin: 4px 0;
-    }
+  .menuIconClass span:nth-child(2) {
+    display: none;
+  }
+
+  .menuIcon span:nth-child(2) {
+    margin: 4px 0;
+  }
 }
 
 @media (max-width: 545px) {
-    .logoHeader{
-        flex-direction: column;
-        font-size: 20px;
-        margin-bottom: 10px;
-    }
+  .logoHeader {
+    flex-direction: column;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
 
-    .logoHeader img{
-        height: 100px;
-    }
+  .logoHeader img {
+    height: 100px;
+  }
 
-    .menuIcon{
-        right: 20px;
-    }
+  .menuIcon {
+    right: 20px;
+  }
 
-    .navButton{
-        font-size: 15px;
-    }
+  .navButton {
+    font-size: 15px;
+  }
 
-    .menu{
-        top: 133px;
-    }
+  .menu {
+    top: 133px;
+  }
 
-    .menuClass{
-        width: 100%;
-        text-align: center;
-    }
+  .menuClass {
+    width: 100%;
+    text-align: center;
+  }
 }
