@@ -13,6 +13,7 @@ import localeEs from '@angular/common/locales/es';
 import { registerLocaleData } from '@angular/common';
 import { SwiperComponent } from './components/homeComponents/swiper/swiper.component';
 import { TableComponent } from './components/homeComponents/table/table.component';
+import { CardsComponent } from './components/homeComponents/cards/cards.component';
 registerLocaleData(localeEs);
 
 @NgModule({
@@ -23,7 +24,8 @@ registerLocaleData(localeEs);
     HeaderComponent,
     FooterComponent,
     SwiperComponent,
-    TableComponent
+    TableComponent,
+    CardsComponent
   ],
   imports: [
     BrowserModule,
