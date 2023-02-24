@@ -23,6 +23,7 @@
 .swiper-item {
   width: fit-content;
   background-color: var(--lightGrey);
+  transition: background-color 0.3s ease;
   border-radius: 5px;
   margin: 0 auto;
   padding: 10px;
