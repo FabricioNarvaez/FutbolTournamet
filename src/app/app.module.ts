@@ -12,6 +12,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import localeEs from '@angular/common/locales/es';
 import { registerLocaleData } from '@angular/common';
 import { SwiperComponent } from './components/homeComponents/swiper/swiper.component';
+import { TableComponent } from './components/homeComponents/table/table.component';
 registerLocaleData(localeEs);
 
 @NgModule({
@@ -21,7 +22,8 @@ registerLocaleData(localeEs);
     ErrorComponent,
     HeaderComponent,
     FooterComponent,
-    SwiperComponent
+    SwiperComponent,
+    TableComponent
   ],
   imports: [
     BrowserModule,

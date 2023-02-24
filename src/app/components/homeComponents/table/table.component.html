@@ -1,0 +1,21 @@
+<div class="tableContainer">
+  <div class="tableTitle">
+    <h3>CLASIFICACIÓN</h3>
+  </div>
+  <table class="tableContent">
+    <thead class="tableHeader">
+      <th>Pos</th>
+      <th>Club</th>
+      <th>GD</th>
+      <th>Pts</th>
+    </thead>
+    <tbody class="tableBody">
+      <tr *ngFor="let club of tableItems; let i = index">
+        <td>{{ i + 1 }}</td>
+        <td>{{ club.team }}</td>
+        <td>{{ club.GD }}</td>
+        <td>{{ club.pts }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

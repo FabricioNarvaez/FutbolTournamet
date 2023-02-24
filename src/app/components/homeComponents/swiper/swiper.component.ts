@@ -4,7 +4,7 @@ import SwiperCore, { Navigation, Pagination } from 'swiper';
 SwiperCore.use([Navigation, Pagination]);
 
 @Component({
-  selector: 'app-swiper',
+  selector: 'home-swiper',
   templateUrl: './swiper.component.html',
   styleUrls: ['./swiper.component.css'],
   encapsulation: ViewEncapsulation.None,
