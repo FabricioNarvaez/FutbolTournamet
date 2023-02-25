@@ -3,7 +3,7 @@
   grid-template-columns: 2fr 1fr;
 }
 
-@media (max-width: 1150px) {
+@media (max-width: 1240px) {
   .homePageGrid {
     grid-template-columns: 1fr;
   }
