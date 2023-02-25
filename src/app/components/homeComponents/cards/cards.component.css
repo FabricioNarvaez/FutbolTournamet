@@ -20,7 +20,7 @@
 }
 
 .infoTeams {
-  margin: 10px 5px 4px 5px;
+  margin: 10px 5px;
   display: grid;
   gap: 5px;
   grid-template-columns: repeat(3, 1fr);
@@ -36,7 +36,22 @@
   color: var(--white);
 }
 
-.matchCard img {
+.result{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  height: 30px;
+  width: 50px;
+  background-color: var(--green);
+}
+
+.teamHomeInfo,
+.teamAwayInfo{
+  text-align: center;
+}
+
+.teamImg {
   height: 50px;
 }
 
