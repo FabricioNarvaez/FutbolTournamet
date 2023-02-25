@@ -2,6 +2,11 @@
   padding: 20px 40px;
 }
 
+.greenBackground{
+  background-color: var(--green);
+  border: 1.5px solid var(--white);
+}
+
 td,
 th {
   padding: 5px;

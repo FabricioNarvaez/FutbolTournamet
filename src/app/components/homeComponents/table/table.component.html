@@ -10,7 +10,7 @@
       <th>Pts</th>
     </thead>
     <tbody class="tableBody">
-      <tr *ngFor="let club of tableItems; let i = index">
+      <tr [ngClass]="{'greenBackground': i < 4}" *ngFor="let club of tableItems; let i = index">
         <td>{{ i + 1 }}</td>
         <td><a href="#">{{ club.team }}</a></td>
         <td>{{ club.GD }}</td>
