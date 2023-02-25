@@ -4,12 +4,15 @@
   <div class="matchesContainer">
     <div class="matchCard" *ngFor="let match of matches">
       <div class="infoTeams">
-        <img src="{{ match.teamHomeImg }}" alt="{{ match.teamHome }}" />
+        <div class="teamHomeInfo">
+          <img class="teamImg" src="{{ match.teamHomeImg }}" alt="{{ match.teamHome }}" />
+          <p>{{ match.teamHome }}</p>
+        </div>
         <h3>VS</h3>
-        <img src="{{ match.teamAwayImg }}" alt="{{ match.teamAwayImg }}" />
-        <p>{{ match.teamHome }}</p>
-        <div></div>
-        <p>{{ match.teamAway }}</p>
+        <div class="teamAwayInfo">
+          <img class="teamImg" src="{{ match.teamAwayImg }}" alt="{{ match.teamAwayImg }}" />
+          <p>{{ match.teamAway }}</p>
+        </div>
       </div>
       <div class="infoMatch">
         <p>
@@ -18,6 +21,27 @@
           }}</span>
           | {{ match.matchDate.hour }}
         </p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="cardsSection">
+  <h2 class="subTitle">Resultados jornada {{ lastMatchWeek }}</h2>
+  <hr />
+  <div class="matchesContainer">
+    <div class="matchCard" *ngFor="let result of lastWeekResults">
+      <div class="infoTeams">
+        <div class="teamHomeInfo">
+          <img class="teamImg" src="{{ result.teamHomeImg }}" alt="{{ result.teamHome }}" />
+          <p>{{ result.teamHome }}</p>
+        </div>
+        <div class="result">
+          <h3>{{ result.teamHomeResult }} - {{ result.teamAwayResult }}</h3>
+        </div>
+        <div class="teamAwayInfo">
+          <img class="teamImg"src="{{ result.teamAwayImg }}" alt="{{ result.teamAwayImg }}" />
+          <p>{{ result.teamAway }}</p>
+        </div>
       </div>
     </div>
   </div>
