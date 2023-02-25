@@ -29,11 +29,7 @@
 }
 
 .swiper-item:hover {
-  background-color: var(--blueWeb);
-}
-
-.swiper-item:hover h3 {
-  color: var(--white);
+  background-color: var(--green);
 }
 
 .swiper img {
