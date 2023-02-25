@@ -2,7 +2,7 @@
   <h2 class="subTitle">Próximos Partidos</h2>
   <hr />
   <div class="matchesContainer">
-    <div class="matchCard" *ngFor="let match of matches">
+    <a class="matchCard" href="#" *ngFor="let match of matches">
       <div class="infoTeams">
         <div class="teamHomeInfo">
           <img class="teamImg" src="{{ match.teamHomeImg }}" alt="{{ match.teamHome }}" />
@@ -22,14 +22,14 @@
           | {{ match.matchDate.hour }}
         </p>
       </div>
-    </div>
+    </a>
   </div>
 </div>
 <div class="cardsSection">
   <h2 class="subTitle">Resultados jornada {{ lastMatchWeek }}</h2>
   <hr />
   <div class="matchesContainer">
-    <div class="matchCard" *ngFor="let result of lastWeekResults">
+    <a class="matchCard" href="#" *ngFor="let result of lastWeekResults">
       <div class="infoTeams">
         <div class="teamHomeInfo">
           <img class="teamImg" src="{{ result.teamHomeImg }}" alt="{{ result.teamHome }}" />
@@ -43,6 +43,6 @@
           <p>{{ result.teamAway }}</p>
         </div>
       </div>
-    </div>
+    </a>
   </div>
 </div>
