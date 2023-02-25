@@ -1,15 +1,24 @@
 .tableContainer {
-  padding: 20px 40px;
+  padding: 20px 0px 40px 40px;
+}
+
+.greenBackground{
+  background-color: var(--green);
+  border: 1.5px solid var(--white);
 }
 
 td,
 th {
-  padding: 5px;
+  padding: 7px;
 }
 
 tr,
 thead {
   border: 1.5px solid var(--lightGrey);
+}
+
+tr:hover{
+  background-color: var(--lightGrey);
 }
 
 table {
@@ -35,20 +44,22 @@ table {
   color: var(--darkGrey);
 }
 
-@media (max-width: 1530px) {
+@media (max-width: 1370px) {
   .tableContainer {
-    padding: 20px 0px 20px 20px;
+    padding-left: 20px;
   }
 }
 
-@media (max-width: 1150px) {
+@media (max-width: 1240px) {
   .tableContainer {
-    padding: 20px 100px;
+    padding-left: 100px;
+    padding-right: 100px;
   }
 }
 
-@media (max-width: 740px) {
+@media (max-width: 780px) {
   .tableContainer {
-    padding: 20px 0px;
+    padding-left: 0px;
+    padding-right: 0px;
   }
 }
