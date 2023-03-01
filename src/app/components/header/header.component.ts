@@ -7,6 +7,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
+	links: Array<any> = [
+		{
+			route: "/home",
+			title: "HOME"
+		},
+		{
+			route: "/error",
+			title: "ESTADISTICAS"
+		},
+		{
+			route: "/error2",
+			title: "CLASIFICACIÓN"
+		},
+		{
+			route: "/error3",
+			title: "RESULTADOS"
+		},
+	]
+
 	constructor() { }
 
 	menuVariable:boolean = false;
