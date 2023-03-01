@@ -1,9 +1,9 @@
 <header id="header">
     <div class="headerContainer">
-        <div class="logoHeader">
+        <a class="logoHeader" routerLink="/home">
             <img src="assets/images/football-logo.png" alt="tournamentLogo"/>
             <span><strong>Soccer</strong>Tournament</span>
-        </div>
+        </a>
         <nav class="headerNav">
             <div class="menuIcon" [class.menuIconClass]="menuIconVariable" (click)="openMenu()">
                 <span></span>
@@ -13,7 +13,7 @@
             <div class="menu" [class.menuClass]="menuVariable">
                 <ul>
                     <li class="navButton" *ngFor="let link of links">
-                        <a [routerLink]="['{{link.route}}']" [routerLinkActive]="['active']">{{link.title}}</a>
+                        <a routerLink={{link.route}} [routerLinkActive]="['active']">{{link.title}}</a>
                     </li>
                 </ul>
             </div>
