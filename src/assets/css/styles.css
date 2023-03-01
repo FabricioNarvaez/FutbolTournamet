@@ -45,7 +45,7 @@ app-footer {
 }
 
 #header,
-.navButton,
+.navButton a,
 .footer-container,
 .footer-text a {
   color: var(--white);

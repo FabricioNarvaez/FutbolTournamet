@@ -12,17 +12,17 @@
             </div>
             <div class="menu" [class.menuClass]="menuVariable">
                 <ul>
-                    <li>
-                        <a class="navButton">home</a>
+                    <li class="navButton">
+                        <a [routerLink]="['/home']" [routerLinkActive]="['active']">home</a>
                     </li>
-                    <li>
-                        <a class="navButton">stats center</a>
+                    <li class="navButton">
+                        <a [routerLink]="['/error']" [routerLinkActive]="['active']">stats center</a>
                     </li>
-                    <li>
-                        <a class="navButton">table</a>
+                    <li class="navButton">
+                        <a [routerLink]="['/error2']" [routerLinkActive]="['active']">table</a>
                     </li>
-                    <li>
-                        <a class="navButton">results</a>
+                    <li class="navButton">
+                        <a [routerLink]="['/error3']" [routerLinkActive]="['active']">results</a>
                     </li>
                 </ul>
             </div>
