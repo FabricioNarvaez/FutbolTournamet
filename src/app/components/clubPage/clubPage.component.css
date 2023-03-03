@@ -1,0 +1,8 @@
+.clubDetails{
+    display: flex;
+    align-items: center;
+}
+
+.clubImg{
+    height: 170px;
+}

@@ -6,7 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./clubPage.component.css']
 })
 export class ClubPageComponent implements OnInit {
-
+  clubInfo = {
+      img: "../../../assets/images/teams/Bayern.png",
+      clubName: "Bayern"
+    }
   constructor() { }
 
   ngOnInit(): void {
