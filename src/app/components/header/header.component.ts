@@ -9,20 +9,20 @@ export class HeaderComponent implements OnInit {
 
 	links: Array<any> = [
 		{
-			route: "/home",
-			title: "HOME"
+			route: "/inicio",
+			title: "Inicio"
 		},
 		{
 			route: "/error",
-			title: "ESTADISTICAS"
+			title: "Estadisticas"
 		},
 		{
 			route: "/error2",
-			title: "CLASIFICACIÓN"
+			title: "Clasificación"
 		},
 		{
 			route: "/error3",
-			title: "RESULTADOS"
+			title: "Resultados"
 		},
 	]
 
