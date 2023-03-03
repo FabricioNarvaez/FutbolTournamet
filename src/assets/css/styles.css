@@ -44,8 +44,8 @@ app-footer {
   margin-top: auto;
 }
 
-#header,
-.navButton,
+.logoHeader,
+.navButton a,
 .footer-container,
 .footer-text a {
   color: var(--white);

@@ -14,6 +14,10 @@
   justify-content: space-between;
 }
 
+.active{
+  border-bottom: 1.5px solid var(--green);
+}
+
 /* Logo header */
 .logoHeader {
   font-size: 30px;
@@ -35,14 +39,13 @@
   font-size: 18px;
   height: 35px;
   background-color: transparent;
-  border-radius: 5px;
   border: none;
-  text-transform: uppercase;
   transition: all 0.5s;
 }
 
-.navButton:hover {
+.navButton a:hover {
   color: var(--blueWeb);
+  border-radius: 5px;
   background-color: var(--green);
 }
 
@@ -61,7 +64,7 @@
 
 /* Media queries */
 
-@media (max-width: 1260px) {
+@media (max-width: 1390px) {
   .headerContainer {
     width: 100%;
   }
