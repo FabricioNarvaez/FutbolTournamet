@@ -1,0 +1,169 @@
+.container {
+    max-width: 300px;
+    position: relative; 
+}
+
+.container::first-child {
+    z-index: 5;
+}
+
+.dropdownContainerVisible {
+    opacity: 1;
+    position: relative;
+    width: 100%;
+    background: transparent;
+    border: 1px solid transparent;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    cursor: pointer;
+    user-select: none;
+    border-radius: 3px 3px 0px 0px; 
+    font-size: 0.8rem;
+    transition: background 0.3s ease 0s, color 0.3s ease 0s, border-color 0.3s ease 0s;
+    color: var(--black)
+}
+
+.dropdownContainer {
+    opacity: 1;
+    position: relative;
+    width: 100%;
+    background: var(--white);
+    border: 1px solid var(--blueWeb);
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    cursor: pointer;
+    user-select: none;
+    border-radius: 3px 3px 0px 0px;
+    font-size: 0.8rem;
+    transition: background 0.3s ease 0s, color 0.3s ease 0s, border-color 0.3s ease 0s;
+    color: var(--black);
+}
+
+.selectedItemVisible {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    font-weight: bold;
+    padding: 0.5rem 1.25rem 0.5rem 0.25rem;
+    height: 35px;
+    position: relative;
+    transition: border-color 0.3s ease 0s;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid var(--blueWeb);
+}
+
+.selectedItem {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    font-weight: bold;
+    padding: 0.5rem 1.25rem 0.5rem 0.25rem;
+    height: 35px;
+    position: relative;
+    transition: border-color 0.3s ease 0s;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid var(--blueWeb);
+}
+
+.selectedItemVisible::after {
+    content: " "; 
+    position: absolute;
+    right: 0.25rem;
+    top: 0.95rem;
+    width: 0.5rem;
+    height: 0.5rem;
+    border-style: solid;
+    border-width: 1px 1px 0px 0px;
+    transform: rotateZ(135deg);
+}
+
+.selectedItem::after {
+    content: " ";
+    position: absolute;
+    right: 0.25rem;
+    top: 1.25rem;
+    width: 0.5rem;
+    height: 0.5rem;
+    border-style: solid;
+    border-width: 1px 1px 0px 0px;
+    transform: rotateZ(-45deg);
+}
+
+.itemList ul {
+    z-index: 100;
+}
+
+.itemListVisible {
+    opacity: 0; 
+    max-height: 0px;
+    width: calc(100% - 16px);
+    padding: 0px 0.5rem 0.5rem;
+    overflow: auto;
+    position: absolute;
+    left: -1px;
+    background-color: var(--white);
+    color: var(--black);
+    border-style: solid;
+    border-color: var(--blueWeb);
+    transition: max-height 0.3s ease 0s, color 0.3s ease 0s, border-color 0.3s ease 0s, background-color 0.3s ease 0s, opacity 0.3s ease 0s;
+    font-size: 0.8rem;
+    top: 100%;
+    border-width: 0px 1px 1px;
+    border-radius: 0px 0px 3px 3px;
+}
+
+.itemList {
+    opacity: 1;
+    max-height: 170px;
+    width: calc(100% - 16px);
+    padding: 0px 0.5rem 0.5rem;
+    overflow: auto;
+    position: absolute;
+    left: -1px;
+    background-color: var(--white);
+    color: var(--black);
+    border-style: solid;
+    border-color: var(--blueWeb);
+    transition: max-height 0.3s ease 0s, color 0.3s ease 0s, border-color 0.3s ease 0s, background-color 0.3s ease 0s, opacity 0.3s ease 0s;
+    font-size: 0.8rem;
+    top: 100%;
+    border-width: 0px 1px 1px;
+    border-radius: 0px 0px 3px 3px;
+}
+
+.itemList li:hover a{
+    background-color: var(--blueWeb);
+    color: var(--white);
+}
+
+.item {
+    padding: 0px;
+    transition: background-color 0.3s ease 0s, color 0.3s ease 0s;
+}
+
+.link {
+    display: block;
+    padding: 0.5rem 0.25rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/* TODO: Dar estilo de scroll a toda la app?*/
+::-webkit-scrollbar {
+    width: 10px;
+  }
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: var(--grey);
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 8px;
+}

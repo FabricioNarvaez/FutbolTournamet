@@ -1,0 +1,14 @@
+<div class="container">
+    <div [ngClass]="menuVariable ? 'dropdownContainer' : 'dropdownContainerVisible'">
+        <div [ngClass]="menuVariable ? 'selectedItem' : 'selectedItemVisible'" (click)="openList()">
+            <span>Jornada 24</span>
+        </div>        
+        <ul [ngClass]="menuVariable ? 'itemList' : 'itemListVisible'">
+            <li class="item" *ngFor="let jornada of jornadas">
+                <div>
+                    <a class="link">{{jornada}}</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
