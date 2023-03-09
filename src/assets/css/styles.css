@@ -16,6 +16,13 @@
   font-family: var(--subtitleFont);
 }
 
+.inlineNav{
+  display: inline;
+  list-style-type: none;
+  margin: 20px;
+  cursor: pointer;
+}
+
 * {
   margin: 0;
   padding: 0;
