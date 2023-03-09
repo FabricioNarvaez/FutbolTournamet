@@ -16,13 +16,6 @@
     font-size: 50px;
 }
 
-.menu ul li {
-    display: inline;
-    list-style-type: none;
-    margin: 20px;
-    cursor: pointer;
-  }
-
 @media (max-width: 929px) {
     .clubDetails{
         flex-direction: column;
