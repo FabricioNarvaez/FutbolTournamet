@@ -8,3 +8,15 @@
     grid-template-columns: 1fr;
   }
 }
+
+@media (max-width: 1240px) {
+  .homePage{
+    padding: 0 50px;
+  }
+}
+
+@media (max-width: 500px) {
+  .homePage{
+    padding: 0 20px;
+  }
+}
