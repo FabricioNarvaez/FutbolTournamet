@@ -8,7 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class ClubPageComponent implements OnInit {
   clubInfo = {
       img: "../../../assets/images/teams/Bayern.png",
-      clubName: "Bayern"
+      clubName: "Bayern",
+      backgroundColor: "red"
     }
   constructor() { }
 

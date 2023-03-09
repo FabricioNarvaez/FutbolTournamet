@@ -1,8 +1,28 @@
 .clubDetails{
     display: flex;
     align-items: center;
+    gap: 40px;
+    padding: 50px 70px;
 }
 
 .clubImg{
-    height: 170px;
+    height: 150px;
+    border-radius: 50%; /* Crea un borde redondeado */
+    box-shadow: 0 0 0 15px var(--white);
+}
+
+.clubName{
+    color: var(--white);
+    font-size: 50px;
+}
+
+@media (max-width: 500px) {
+    .clubDetails{
+        flex-direction: column;
+    }
+
+    .clubImg{
+        height: 100px;
+        box-shadow: 0 0 0 10px var(--white);
+    }
 }
