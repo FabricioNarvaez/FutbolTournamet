@@ -16,7 +16,7 @@
     font-size: 50px;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 929px) {
     .clubDetails{
         flex-direction: column;
     }

@@ -3,8 +3,8 @@
     margin: 0 auto;
 }
 
-@media (max-width: 545px){
+@media (max-width: 929px){
     .bodyContainer{
-        width: 90%;
+        width: 100%;
     }
 }
