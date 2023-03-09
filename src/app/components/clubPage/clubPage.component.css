@@ -1,0 +1,56 @@
+.clubDetails {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding: 50px 70px;
+}
+
+.clubImg {
+  height: 150px;
+  border-radius: 50%; /* Crea un borde redondeado */
+  box-shadow: 0 0 0 15px var(--white);
+}
+
+.clubName {
+  color: var(--white);
+  font-size: 50px;
+}
+
+.clubPageNav {
+  padding: 20px 10px;
+  font-weight: bold;
+  overflow-x: auto;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+
+.active {
+  border-bottom: 4px solid var(--blueWeb);
+}
+
+.inlineNav:hover {
+  border-bottom: 4px solid var(--grey);
+}
+
+@media (max-width: 929px) {
+  .clubDetails {
+    flex-direction: column;
+  }
+
+  .clubImg {
+    height: 100px;
+    box-shadow: 0 0 0 10px var(--white);
+  }
+}
