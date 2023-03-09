@@ -15,6 +15,7 @@ import { SwiperComponent } from './components/homeComponents/swiper/swiper.compo
 import { TableComponent } from './components/homeComponents/table/table.component';
 import { CardsComponent } from './components/homeComponents/cards/cards.component';
 import { ClubPageComponent } from './components/clubPage/clubPage.component';
+import { ClubPageGeneralComponent } from './components/club-page-general/club-page-general.component';
 registerLocaleData(localeEs);
 
 @NgModule({
@@ -27,7 +28,8 @@ registerLocaleData(localeEs);
     SwiperComponent,
     TableComponent,
     CardsComponent,
-    ClubPageComponent
+    ClubPageComponent,
+    ClubPageGeneralComponent
   ],
   imports: [
     BrowserModule,
