@@ -16,6 +16,19 @@
     font-size: 50px;
 }
 
+.clubPageNav{
+    padding: 20px 10px;
+    font-weight: bold;
+}
+
+.active{
+    border-bottom: 4px solid var(--blueWeb);
+}
+
+.inlineNav:hover{
+    border-bottom: 4px solid var(--grey);
+}
+
 @media (max-width: 929px) {
     .clubDetails{
         flex-direction: column;
