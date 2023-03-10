@@ -1,6 +1,7 @@
 :root {
   --headerFont: "Raleway", sans-serif;
   --subtitleFont: 'Nunito Sans', sans-serif;
+  --countdownFont: 'Bebas Neue';
   --bodyFont: "Barlow Semi Condensed", sans-serif;
   --blueWeb: #111f98;
   --green: #cdfb0a;

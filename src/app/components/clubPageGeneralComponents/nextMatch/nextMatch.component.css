@@ -1,9 +1,27 @@
 .countdown{
+    font-family: var(--countdownFont);
+    text-shadow: 1px 1px 0 #000,
+               -1px -1px 0 #000, 
+               1px -1px 0 #000, 
+               -1px 1px 0 #000;
+    color: var(--white);
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    justify-items: center
+    grid-template-columns: repeat(7, 1fr);
+    justify-items: center;
+    width: 360px;
+    margin: 30px auto;
 }
 
 .date{
     text-align: center;
+    font-size: 48px;
+}
+
+.countdownClock p{
+    text-align: center;
+}
+
+.dots{
+    font-weight: bold;
+    font-size: 40px;
 }
