@@ -1,35 +1,42 @@
-<div class="countdownContainer">
-  <h2 class="date countdownSubtitle">Próximo partido</h2>
-  <div class="countdown">
-    <div class="countdownClock">
-      <h3 class="date">{{ days }}</h3>
-      <p>DÍAS</p>
-    </div>
-    <span class="dots">:</span>
-    <div class="countdownClock">
-      <h3 class="date">{{ hours }}</h3>
-      <p>HORAS</p>
-    </div>
-    <span class="dots">:</span>
-    <div class="countdownClock">
-      <h3 class="date">{{ minutes }}</h3>
-      <p>MINS</p>
-    </div>
-    <span class="dots">:</span>
-    <div class="countdownClock">
-      <h3 class="date">{{ seconds }}</h3>
-      <p>SEC</p>
+<div class="nextMatchContainer">
+  <div class="countdownContainer">
+    <h2 class="date countdownSubtitle">Próximo partido</h2>
+    <div class="countdown">
+      <div class="countdownClock">
+        <h3 class="date">{{ days }}</h3>
+        <p>DÍAS</p>
+      </div>
+      <span class="dots">:</span>
+      <div class="countdownClock">
+        <h3 class="date">{{ hours }}</h3>
+        <p>HORAS</p>
+      </div>
+      <span class="dots">:</span>
+      <div class="countdownClock">
+        <h3 class="date">{{ minutes }}</h3>
+        <p>MINS</p>
+      </div>
+      <span class="dots">:</span>
+      <div class="countdownClock">
+        <h3 class="date">{{ seconds }}</h3>
+        <p>SEC</p>
+      </div>
     </div>
   </div>
-</div>
-<div class="clubNextMatch">
-  <div>
-    <img class="clubNextMatchImg" src="{{nextMatchInfo[0].teamHomeImg}}" alt="{{nextMatchInfo[0].teamHome}}" />
-    <p>{{nextMatchInfo[0].teamHome}}</p>
-  </div>
-  <span class="matchInfo"></span>
-  <div>
-    <img class="clubNextMatchImg" src="{{nextMatchInfo[0].teamAwayImg}}" alt="{{nextMatchInfo[0].teamAway}}" />
-    <p>{{nextMatchInfo[0].teamAway}}</p>
+  <div class="nextMatch">
+    <div class="clubNextMatch">
+      <img class="clubNextMatchImg" src="{{nextMatchInfo[0].teamHomeImg}}" alt="{{nextMatchInfo[0].teamHome}}" />
+      <p>{{nextMatchInfo[0].teamHome}}</p>
+    </div>
+    <div class="matchInfo">
+      <span>{{
+        nextMatchInfo[0].matchDate.date | date : "dd MMMM yyyy" : "es" | titlecase
+      }}</span>
+      <p>{{ nextMatchInfo[0].matchDate.hour }}</p>
+    </div>
+    <div class="clubNextMatch">
+      <img class="clubNextMatchImg" src="{{nextMatchInfo[0].teamAwayImg}}" alt="{{nextMatchInfo[0].teamAway}}" />
+      <p>{{nextMatchInfo[0].teamAway}}</p>
+    </div>
   </div>
 </div>
