@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ClubPageGeneralComponent } from './club-page-general.component';
+import { ClubPageGeneralComponent } from './clubPageGeneral.component';
 
 describe('ClubPageGeneralComponent', () => {
   let component: ClubPageGeneralComponent;

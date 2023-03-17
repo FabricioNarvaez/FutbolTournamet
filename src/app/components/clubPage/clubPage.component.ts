@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-club-page',
+  selector: 'app-clubPage',
   templateUrl: './clubPage.component.html',
   styleUrls: ['./clubPage.component.css'],
 })

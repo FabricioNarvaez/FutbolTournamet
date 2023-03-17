@@ -16,7 +16,8 @@ import { TableComponent } from './components/homeComponents/table/table.componen
 import { CardsComponent } from './components/homeComponents/cards/cards.component';
 import { SelectorComponent } from './components/homeComponents/selector/selector.component';
 import { ClubPageComponent } from './components/clubPage/clubPage.component';
-import { ClubPageGeneralComponent } from './components/club-page-general/club-page-general.component';
+import { ClubPageGeneralComponent } from './components/clubPageGeneral/clubPageGeneral.component';
+import { NextMatchComponent } from './components/clubPageGeneralComponents/nextMatch/nextMatch.component';
 registerLocaleData(localeEs);
 
 @NgModule({
@@ -31,7 +32,8 @@ registerLocaleData(localeEs);
     CardsComponent,
     SelectorComponent,
     ClubPageComponent,
-    ClubPageGeneralComponent
+    ClubPageGeneralComponent,
+    NextMatchComponent
   ],
   imports: [
     BrowserModule,

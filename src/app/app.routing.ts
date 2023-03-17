@@ -2,7 +2,7 @@ import { ModuleWithProviders } from "@angular/core";
 import { Routes, RouterModule } from "@angular/router";
 
 import { HomeComponent } from "./components/home/home.component";
-import { ClubPageGeneralComponent } from './components/club-page-general/club-page-general.component';
+import { ClubPageGeneralComponent } from './components/clubPageGeneral/clubPageGeneral.component';
 import { ErrorComponent } from "./components/error/error.component";
 
 const appRoutes: Routes = [
