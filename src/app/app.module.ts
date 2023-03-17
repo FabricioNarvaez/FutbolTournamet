@@ -18,6 +18,7 @@ import { SelectorComponent } from './components/homeComponents/selector/selector
 import { ClubPageComponent } from './components/clubPage/clubPage.component';
 import { ClubPageGeneralComponent } from './components/clubPageGeneral/clubPageGeneral.component';
 import { NextMatchComponent } from './components/clubPageGeneralComponents/nextMatch/nextMatch.component';
+import { StatsComponent } from './components/clubPageGeneralComponents/stats/stats.component';
 registerLocaleData(localeEs);
 
 @NgModule({
@@ -33,7 +34,8 @@ registerLocaleData(localeEs);
     SelectorComponent,
     ClubPageComponent,
     ClubPageGeneralComponent,
-    NextMatchComponent
+    NextMatchComponent,
+    StatsComponent
   ],
   imports: [
     BrowserModule,
