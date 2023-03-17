@@ -14,6 +14,19 @@ export class NextMatchComponent implements OnInit {
   hours: number = 0;
   minutes: number = 0;
   seconds: number = 0;
+
+  nextMatchInfo: Array<any> = [
+    {
+      teamHomeImg: '../../../assets/images/teams/Bayern.png',
+      teamHome: "Bayern",
+      matchDate: {
+        date: '9/12/2023',
+        hour: '17:45',
+      },
+      teamAwayImg: '../../../assets/images/teams/Besiktas.png',
+      teamAway: "Besiktas"
+    }
+  ]
   
   constructor() { }
 
