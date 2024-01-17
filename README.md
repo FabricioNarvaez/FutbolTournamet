@@ -1,6 +1,6 @@
 # FutbolTournament
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.2.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.2, and Node 16.19.0.
 
 ## Development server
 
